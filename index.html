@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Percentage and Grade Calculator</title>
+<link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+<div class="form1">
+
+      <h2>STUDENT PERCENTAGE <br> AND <br> GRADE CALCULATOR</h2>
+      <div class="data">
+
+
+      <fieldset>
+        <legend>Biodata</legend>
+
+<form class="biodata" >
+<label for="stname">Student Name: </label>
+<input id="stname" type="text" placeholder="Enter your name here"  maxlength="100"  required>
+<br>
+<label for="roll">Roll#</label>
+<input id="roll" type="text" placeholder="Bees/s13/001" maxlength="100" size="40px" required>
+
+</form>
+</fieldset>
+
+<fieldset>
+  <legend>Marks</legend>
+
+      <form class="formstyle" onsubmit="percentage(); return false;">
+        <select id="subject1" >
+          <option >Subject 01</option>
+          <option >English</option>
+          <option >Linear Algebra</option>
+          <option >Pakistan studies</option>
+          <option >Basic Electronics</option>
+          <option >Programming fundamentals</option>
+          <option >Islamic Studies</option>
+          <option >Digital electronics</option>
+          <option >Digital signal processing</option>
+          <option >Embedded electronics</option>
+          <option >signals & systems</option>
+          <option >Probability & statistics</option>
+          <option >Power electronics</option>
+          <option >Modern Electrical Drives</option>
+          <option >Engineering mechanics</option>
+        </select>
+        <input type="number" id="subject1Obtmarks" placeholder="Enter marks here.." size="50px" required min="0" max="1000">
+        <input type="number" id="subject1Totmarks" placeholder="Enter marks here.." size="50px" required min="0" max="1000">
+<br>
+        <select id="subject2">
+          <option  selected>Subject# 2</option>
+          <option >English</option>
+          <option >Linear Algebra</option>
+          <option >Pakistan studies</option>
+          <option >Basic Electronics</option>
+          <option >Programming fundamentals</option>
+          <option >Islamic Studies</option>
+          <option >Digital electronics</option>
+          <option >Digital signal processing</option>
+          <option >Embedded electronics</option>
+          <option >signals & systems</option>
+          <option >Probability & statistics</option>
+          <option >Power electronics</option>
+          <option >Modern Electrical Drives</option>
+          <option >Engineering mechanics</option>
+        </select>
+        <input type="number" id="subject2Obtmarks" placeholder="Enter marks here.." required min="0" max="1000">
+        <input type="number" id="subject2Totmarks" placeholder="Enter marks here.." required min="0" max="1000">
+<br>
+<select id="subject3">
+  <option  selected>Subject# 3</option>
+  <option >English</option>
+  <option >Linear Algebra</option>
+  <option >Pakistan studies</option>
+  <option >Basic Electronics</option>
+  <option >Programming fundamentals</option>
+  <option >Islamic Studies</option>
+  <option >Digital electronics</option>
+  <option >Digital signal processing</option>
+  <option >Embedded electronics</option>
+  <option >signals & systems</option>
+  <option >Probability & statistics</option>
+  <option >Power electronics</option>
+  <option >Modern Electrical Drives</option>
+  <option >Engineering mechanics</option>
+</select>
+<input type="number" id="subject3Obtmarks" placeholder="Enter marks here.." required min="0" max="1000">
+<input type="number" id="subject3Totmarks" placeholder="Enter marks here.." required min="0" max="1000">
+<br>
+<select id="subject4">
+  <option  selected>Subject# 4</option>
+  <option >English</option>
+  <option >Linear Algebra</option>
+  <option >Pakistan studies</option>
+  <option >Basic Electronics</option>
+  <option >Programming fundamentals</option>
+  <option >Islamic Studies</option>
+  <option >Digital electronics</option>
+  <option >Digital signal processing</option>
+  <option >Embedded electronics</option>
+  <option >signals & systems</option>
+  <option >Probability & statistics</option>
+  <option >Power electronics</option>
+  <option >Modern Electrical Drives</option>
+  <option >Engineering mechanics</option>
+</select>
+<input type="number" id="subject4Obtmarks" placeholder="Enter marks here.." required min="0" max="1000">
+<input type="number" id="subject4Totmarks" placeholder="Enter marks here.." required min="0" max="1000">
+<br>
+<select id="subject5">
+  <option  selected>Subject# 5</option>
+  <option >English</option>
+  <option >Linear Algebra</option>
+  <option >Pakistan studies</option>
+  <option >Basic Electronics</option>
+  <option >Programming fundamentals</option>
+  <option >Islamic Studies</option>
+  <option >Digital electronics</option>
+  <option >Digital signal processing</option>
+  <option >Embedded electronics</option>
+  <option >signals & systems</option>
+  <option >Probability & statistics</option>
+  <option >Power electronics</option>
+  <option >Modern Electrical Drives</option>
+  <option >Engineering mechanics</option>
+</select>
+<input type="number" id="subject5Obtmarks" placeholder="Enter marks here.." required min="0" max="1000">
+<input type="number" id="subject5Totmarks" placeholder="Enter marks here.." required min="0" max="1000">
+<br>
+<select id="subject6" >
+  <option  selected>Subject# 6</option>
+  <option >English</option>
+  <option >Linear Algebra</option>
+  <option >Pakistan studies</option>
+  <option >Basic Electronics</option>
+  <option >Programming fundamentals</option>
+  <option >Islamic Studies</option>
+  <option >Digital electronics</option>
+  <option >Digital signal processing</option>
+  <option >Embedded electronics</option>
+  <option >signals & systems</option>
+  <option >Probability & statistics</option>
+  <option >Power electronics</option>
+  <option >Modern Electrical Drives</option>
+  <option >Engineering mechanics</option>
+</select>
+<input type="number" id="subject6Obtmarks" placeholder="Enter marks here.." required min="0" max="1000">
+<input type="number" id="subject6Totmarks" placeholder="Enter marks here.." required min="0" max="1000">
+<br>
+<select id="subject7">
+  <option  selected>Subject# 7</option>
+  <option >English</option>
+  <option >Linear Algebra</option>
+  <option >Pakistan studies</option>
+  <option >Basic Electronics</option>
+  <option >Programming fundamentals</option>
+  <option >Islamic Studies</option>
+  <option >Digital electronics</option>
+  <option >Digital signal processing</option>
+  <option >Embedded electronics</option>
+  <option >signals & systems</option>
+  <option >Probability & statistics</option>
+  <option >Power electronics</option>
+  <option >Modern Electrical Drives</option>
+  <option >Engineering mechanics</option>
+</select>
+<input type="number" id="subject7Obtmarks" placeholder="Enter marks here.." required min="0" max="1000">
+<input type="number" id="subject7Totmarks" placeholder="Enter marks here.." required min="0" max="1000">
+<br>
+<select id="subject8">
+  <option  selected>Subject# 8</option>
+  <option >English</option>
+  <option >Linear Algebra</option>
+  <option >Pakistan studies</option>
+  <option >Basic Electronics</option>
+  <option >Programming fundamentals</option>
+  <option >Islamic Studies</option>
+  <option >Digital electronics</option>
+  <option >Digital signal processing</option>
+  <option >Embedded electronics</option>
+  <option >signals & systems</option>
+  <option >Probability & statistics</option>
+  <option >Power electronics</option>
+  <option >Modern Electrical Drives</option>
+  <option >Engineering mechanics</option>
+</select>
+<input type="number" id="subject8Obtmarks" placeholder="Enter marks here.." required min="0" max="1000">
+<input type="number" id="subject8Totmarks" placeholder="Enter marks here.." required min="0" max="1000">
+<br>
+<select id="subject9">
+  <option  selected>Subject# 9</option>
+  <option >English</option>
+  <option >Linear Algebra</option>
+  <option >Pakistan studies</option>
+  <option >Basic Electronics</option>
+  <option >Programming fundamentals</option>
+  <option >Islamic Studies</option>
+  <option >Digital electronics</option>
+  <option >Digital signal processing</option>
+  <option >Embedded electronics</option>
+  <option >signals & systems</option>
+  <option >Probability & statistics</option>
+  <option >Power electronics</option>
+  <option >Modern Electrical Drives</option>
+  <option >Engineering mechanics</option>
+</select>
+<input type="number" id="subject9Obtmarks" placeholder="Enter marks here.." required min="0" max="1000">
+<input type="number" id="subject9Totmarks" placeholder="Enter marks here.." required min="0" max="1000">
+<br>
+<select id="subject10" >
+  <option  selected>Subject# 10</option>
+  <option >English</option>
+  <option >Linear Algebra</option>
+  <option >Pakistan studies</option>
+  <option >Basic Electronics</option>
+  <option >Programming fundamentals</option>
+  <option >Islamic Studies</option>
+  <option >Digital electronics</option>
+  <option >Digital signal processing</option>
+  <option >Embedded electronics</option>
+  <option >signals & systems</option>
+  <option >Probability & statistics</option>
+  <option >Power electronics</option>
+  <option >Modern Electrical Drives</option>
+  <option >Engineering mechanics</option>
+</select>
+<input type="number" id="subject10Obtmarks" placeholder="Enter marks here.." required min="0" max="1000">
+<input type="number" id="subject10Totmarks" placeholder="Enter marks here.." required min="0" max="1000">
+<br>
+<button type="submit">Submit</button>
+      </form>
+      </fieldset>
+
+</div>
+
+</div>
+<div class="result">
+
+
+<fieldset >
+  <legend >Result</legend>
+
+<div id="error"></div>
+<div id="subjectsTotalMarks"></div>
+<div id="totalMarksObtained"></div>
+<div id="percent"></div>
+<div id="grade"></div>
+</fieldset>
+</div>
+
+<script src="./app.js">
+
+</script>
+  </body>
+</html>
