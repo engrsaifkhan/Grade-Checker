@@ -1,5 +1,9 @@
 function percentage(){
-
+document.querySelector("#error").innerHTML="";
+document.querySelector("#grade").innerHTML="";
+document.querySelector("#percent").innerHTML="";
+document.querySelector("#totalMarksObtained").innerHTML="";
+document.querySelector("#subjectsTotalMarks").innerHTML="";
 document.querySelector("#subject1Obtmarks").style.background="white";
 document.querySelector("#subject2Obtmarks").style.background="white";
 document.querySelector("#subject3Obtmarks").style.background="white";
